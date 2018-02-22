@@ -4,3 +4,5 @@
 .idea
 /vendor
 /node_modules
+/css/*.less
+/img/*

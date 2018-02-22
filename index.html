@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title> | Unipre | JLM | Instituto John Lawrence Miller</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -14,11 +14,202 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/ionicons/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="node_modules/bootsnav-master/css/animate.css">
     <link rel="stylesheet" href="node_modules/bootsnav-master/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootsnav-master/css/bootsnav.css">
     <link rel="stylesheet" href="node_modules/bootsnav-master/css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/navbar.min.css">
+    <link rel="stylesheet" href="css/box.min.css">
+    <style>
+        .serviceBox {
+            padding: 20px 25px;
+            border-radius: 5px;
+            text-align: right;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            background: rgba(0, 0, 0, .4);
+        }
+        
+        .serviceBox:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background: #094d92;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            z-index: -1;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .serviceBox:hover:before {
+            left: 0;
+        }
+        
+        .serviceBox:after {
+            content: "";
+            width: 7px;
+            height: 0;
+            border-radius: 5px;
+            background: #e80016;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .serviceBox:hover:after {
+            height: 100%;
+        }
+        
+        .serviceBox .service-icon {
+            color: #0b95ff;
+            margin-bottom: 10px;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .serviceBox .service-icon i {
+            font-size: 30px;
+        }
+        
+        .serviceBox .title {
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-right: 10px;
+            color: white;
+        }
+        
+        .serviceBox .description {
+            font-size: 15px;
+            color: #ada9a9;
+            line-height: 25px;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .serviceBox:hover .service-icon,
+        .serviceBox:hover .description {
+            color: #fff;
+        }
+        
+        @media only screen and (max-width: 990px) {
+            .serviceBox {
+                margin-bottom: 30px;
+            }
+        }
+        
+        /*TEam*/
+        
+        .news-jlm {
+            text-align: center;
+            position: relative;
+        }
+        
+        .news-jlm .pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 8px solid #5d7587;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .news-jlm img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .news-jlm .social {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            transition: all 0.3s ease-out 0s;
+        }
+        
+        .news-jlm .social li a {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: #d10f3d;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 5px;
+            transform: scale(0);
+            transition: all 0.2s ease 0s;
+        }
+        
+        .news-jlm:hover .social li a {
+            transform: scale(1);
+            text-decoration: none
+        }
+        
+        .news-jlm:hover .social li a:hover {
+            background: #f00f47;
+        }
+        
+        .news-jlm .conteudo-noticias {
+            padding: 15px 15px 20px;
+            background: #5d7587;
+            border-radius: 40px 40px 0 0;
+            margin-top: -20px;
+            color: #fff;
+        }
+        
+        .news-jlm .title {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+        
+        .news-jlm .post {
+            display: block;
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        
+        .news-jlm .description {
+            padding: 20px;
+            background: #fff;
+            font-size: 16px;
+            color: #666;
+            line-height: 30px;
+            margin-bottom: 0;
+            border: 1px solid #5d7587;
+            -webkit-border-radius: 0 0 40px 40px;
+            -moz-border-radius: 0 0 40px 40px;
+            border-radius: 0 0 40px 40px;
+        }
+        
+        @media only screen and (max-width: 990px) {
+            .news-jlm {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media only screen and (max-width: 359px) {
+            .news-jlm .pic {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .news-jlm .social {
+                top: 20px;
+            }
+        }
+    
+    </style>
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -27,14 +218,19 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<nav class="navbar navbar-default bootsnav">
+<nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
     <div class="container">
         <!-- Start Header Navigation -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#brand"><img src="http://bootsnav.danurstrap.com/images/brand/logo-black.png" class="logo" alt=""></a>
+            <a class="navbar-brand" href="#brand">
+                
+                <img src="http://bootsnav.danurstrap.com/images/brand/logo-white.png" class="logo logo-display" alt="">
+                <img src="http://bootsnav.danurstrap.com/images/brand/logo-white.png" class="logo logo-scrolled" alt="">
+            
+            </a>
         </div>
         <!-- End Header Navigation -->
         
@@ -43,18 +239,171 @@
             
             <ul class="nav navbar-nav navbar-right">
                 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Blog JLM</a></li>
+                <li><a href="#">Contate-nos</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div>
 </nav>
 <!-- Finalizando navbar -->
 
+<!-- Início - Parallax -->
+<div class="parallax" data-height="750px">
+    <div class="title-site">
+        <h1>Faculdades JLM</h1>
+    </div>
+    <div class="container" id="conteudo">
+        <div class="conteudo">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="serviceBox">
+                        <div class="service-icon">
+                            <h3 class="title">Notícias</h3>
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis
+                            dolorem et fugit hic iusto maxime numquam officia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="serviceBox">
+                        <div class="service-icon">
+                            <h3 class="title">Biblioteca</h3>
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis
+                            dolorem et fugit hic iusto maxime numquam officia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="serviceBox">
+                        <div class="service-icon">
+                            <h3 class="title">Artigos</h3>
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis
+                            dolorem et fugit hic iusto maxime numquam officia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</div>
+<!-- Fim - Parallax -->
+<main>
+    
+    <section class="destaques">
+        <div class="container">
+            <h2>Informes e Notícias
+            </h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="news-jlm">
+                        <div class="pic">
+                            <img src="https://picsum.photos/300" alt=""/>
+                        </div>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                        <div class="conteudo-noticias">
+                            <h3 class="title">Universidade Nove de Julho e JLM</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo
+                            fringilla pharetra. Proin sodales risus et nunc volutpat.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="news-jlm">
+                        <div class="pic">
+                            <img src="https://picsum.photos/300" alt=""/>
+                        </div>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                        <div class="conteudo-noticias">
+                            <h3 class="title">Seminário - John Wycliffe</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo
+                            fringilla pharetra. Proin sodales risus et nunc volutpat.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="news-jlm">
+                        <div class="pic">
+                            <img src="https://picsum.photos/300" alt=""/>
+                        </div>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                        <div class="conteudo-noticias">
+                            <h3 class="title">ISIC - Carteira Mundial de Estudante</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo
+                            fringilla pharetra. Proin sodales risus et nunc volutpat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <h2 class="title-newsletter">
+                    Cadastre-se na nossa newsletter
+                </h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <form method="POST" class="form-inline cadastro-form" role="form">
+                
+                	<div class="form-group">
+                		<label class="sr-only" for="">Email</label>
+                		<input type="email" class="input-form-jlm" name="" id="" placeholder=" Insira seu e-mail">
+                	</div>
+                	<button type="reset" class="btn bt-jlm">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="cursos">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="box">
+                <header></header>
+                <main>
+                    <img src="https://picsum.photos/400/400" alt="">
+                </main>
+            </div>
+        </div>
+    </section>
+</main>
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -62,10 +411,16 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="node_modules/bootsnav-master/js/bootsnav.js"></script>
+<script src="js/vendor/parlx.js"></script>
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
+    $('.parallax').Parlx({
+        height: '750px',
+        direction: "vertical",
+        speed: "-0.1"
+    });
     window.ga = function () {
         ga.q.push(arguments)
     };
@@ -73,7 +428,7 @@
     ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto');
     ga('send', 'pageview');
-    
+
     $(document).ready(function () {
         console.log('teste');
     });

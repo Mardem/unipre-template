@@ -1,0 +1,51 @@
+.box {
+  -webkit-box-shadow: 0 0 18px #a2a2a24d;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-box-shadow: 0 0 18px #a2a2a24d;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  box-shadow: 0 0 18px #a2a2a24d;
+  transition: all 0.25s ease-in;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  margin-bottom: 13px;
+  border-radius: 10px;
+  text-align: center;
+  color: #5d7587;
+  padding: 15px;
+}
+.box header {
+  border-bottom: 1px dotted #efebeb;
+  padding-bottom: 6px;
+  font-size: 20pt;
+}
+.box main {
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 30px;
+  padding: 5px 0 5px 0;
+}
+.box .footer-box {
+  padding-top: 4px;
+  border-top: 1px dotted #efebeb;
+}
+.box .footer-box a {
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -ms-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.box .footer-box a:hover {
+  font-weight: bolder;
+}
+.box:hover {
+  -webkit-box-shadow: 0 0 18px rgba(0, 117, 255, 0.25);
+  -moz-box-shadow: 0 0 18px rgba(0, 117, 255, 0.25);
+  box-shadow: 0 0 18px rgba(0, 117, 255, 0.25);
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}

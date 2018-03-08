@@ -1,15 +1,43 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pt_BR">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> | Unipre | JLM | Instituto John Lawrence Miller</title>
-    <meta name="description" content="">
+    <title> • Unipre • JLM • Instituto John Lawrence Miller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta name="description" content=""/>
+    <link rel="canonical" href="http://www.unipre.org/"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="http://www.unipre.org/"/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:secure_url" content=""/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -21,197 +49,9 @@
     <link rel="stylesheet" href="node_modules/bootsnav-master/css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/navbar.min.css">
-    <link rel="stylesheet" href="css/box.min.css">
-    <style>
-        .serviceBox {
-            padding: 20px 25px;
-            border-radius: 5px;
-            text-align: right;
-            overflow: hidden;
-            z-index: 1;
-            position: relative;
-            background: rgba(0, 0, 0, .4);
-        }
-        
-        .serviceBox:before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            background: #094d92;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            z-index: -1;
-            transition: all 0.5s ease 0s;
-        }
-        
-        .serviceBox:hover:before {
-            left: 0;
-        }
-        
-        .serviceBox:after {
-            content: "";
-            width: 7px;
-            height: 0;
-            border-radius: 5px;
-            background: #e80016;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: all 0.5s ease 0s;
-        }
-        
-        .serviceBox:hover:after {
-            height: 100%;
-        }
-        
-        .serviceBox .service-icon {
-            color: #0b95ff;
-            margin-bottom: 10px;
-            transition: all 0.5s ease 0s;
-        }
-        
-        .serviceBox .service-icon i {
-            font-size: 30px;
-        }
-        
-        .serviceBox .title {
-            display: inline-block;
-            font-size: 22px;
-            font-weight: 700;
-            text-transform: capitalize;
-            margin-right: 10px;
-            color: white;
-        }
-        
-        .serviceBox .description {
-            font-size: 15px;
-            color: #ada9a9;
-            line-height: 25px;
-            transition: all 0.5s ease 0s;
-        }
-        
-        .serviceBox:hover .service-icon,
-        .serviceBox:hover .description {
-            color: #fff;
-        }
-        
-        @media only screen and (max-width: 990px) {
-            .serviceBox {
-                margin-bottom: 30px;
-            }
-        }
-        
-        /*TEam*/
-        
-        .news-jlm {
-            text-align: center;
-            position: relative;
-        }
-        
-        .news-jlm .pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 8px solid #5d7587;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        
-        .news-jlm img {
-            width: 100%;
-            height: auto;
-        }
-        
-        .news-jlm .social {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 50px;
-            left: 20px;
-            transition: all 0.3s ease-out 0s;
-        }
-        
-        .news-jlm .social li a {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            border-radius: 50%;
-            background: #d10f3d;
-            font-size: 14px;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 5px;
-            transform: scale(0);
-            transition: all 0.2s ease 0s;
-        }
-        
-        .news-jlm:hover .social li a {
-            transform: scale(1);
-            text-decoration: none
-        }
-        
-        .news-jlm:hover .social li a:hover {
-            background: #f00f47;
-        }
-        
-        .news-jlm .conteudo-noticias {
-            padding: 15px 15px 20px;
-            background: #5d7587;
-            border-radius: 40px 40px 0 0;
-            margin-top: -20px;
-            color: #fff;
-        }
-        
-        .news-jlm .title {
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 10px 0 5px 0;
-        }
-        
-        .news-jlm .post {
-            display: block;
-            font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-        }
-        
-        .news-jlm .description {
-            padding: 20px;
-            background: #fff;
-            font-size: 16px;
-            color: #666;
-            line-height: 30px;
-            margin-bottom: 0;
-            border: 1px solid #5d7587;
-            -webkit-border-radius: 0 0 40px 40px;
-            -moz-border-radius: 0 0 40px 40px;
-            border-radius: 0 0 40px 40px;
-        }
-        
-        @media only screen and (max-width: 990px) {
-            .news-jlm {
-                margin-bottom: 30px;
-            }
-        }
-        
-        @media only screen and (max-width: 359px) {
-            .news-jlm .pic {
-                width: 150px;
-                height: 150px;
-            }
-            
-            .news-jlm .social {
-                top: 20px;
-            }
-        }
-    
-    </style>
+    <link rel="stylesheet" href="css/news.css">
 </head>
-<body>
+<body class="wow fadeIn">
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
@@ -225,19 +65,14 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#brand">
-                
-                <img src="http://bootsnav.danurstrap.com/images/brand/logo-white.png" class="logo logo-display" alt="">
-                <img src="http://bootsnav.danurstrap.com/images/brand/logo-white.png" class="logo logo-scrolled" alt="">
-            
-            </a>
+            <a class="navbar-brand" href="#brand"><img src="img/logo.svg" class="logo" alt=""></a>
         </div>
         <!-- End Header Navigation -->
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
             
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-center">
                 
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -253,12 +88,12 @@
 <!-- Início - Parallax -->
 <div class="parallax" data-height="750px">
     <div class="title-site">
-        <h1>Faculdades JLM</h1>
+        <h1 class="wow slideInDown" data-wow-duration="1s">Faculdades JLM</h1>
     </div>
     <div class="container" id="conteudo">
         <div class="conteudo">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wow slideInUp" data-wow-duration="1.3s">
                     <div class="serviceBox">
                         <div class="service-icon">
                             <h3 class="title">Notícias</h3>
@@ -267,32 +102,37 @@
                         <p class="description">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis
                             dolorem et fugit hic iusto maxime numquam officia.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque,
                         </p>
                     </div>
                 </div>
                 
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wow slideInUp" data-wow-duration="1.5s">
                     <div class="serviceBox">
                         <div class="service-icon">
                             <h3 class="title">Biblioteca</h3>
                             <i class="fa fa-briefcase"></i>
                         </div>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis
-                            dolorem et fugit hic iusto maxime numquam officia.
+                            Organizar, preservar e disseminar a informação para a produção do conhecimento, dando
+                            suporte às atividades educacionais, científicas, tecnológicas e culturais da Universidade
+                            Federal do Ceará, possibilitando o crescimento e o desenvolvimento da Instituição e da
+                            sociedade.
                         </p>
                     </div>
                 </div>
                 
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wow slideInUp" data-wow-duration="1.7s">
                     <div class="serviceBox">
                         <div class="service-icon">
-                            <h3 class="title">Artigos</h3>
-                            <i class="fa fa-mobile"></i>
+                            <h3 class="title">Videoteca</h3>
+                            <i class="ion-ios-play"></i>
                         </div>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis
-                            dolorem et fugit hic iusto maxime numquam officia.
+                            Objetivo fundamental de uma videoteca de uma faculdade é disponibilizar informação em vídeo
+                            para atender à pesquisa e à docência, a Videoteca foi criada junto da Biblioteca. Os filmes
+                            passaram a ser cuidadosamente catalogados e os catálogos publicados, hoje disponibilizados
+                            pela Internet.
                         </p>
                     </div>
                 </div>
@@ -305,7 +145,7 @@
 <main>
     
     <section class="destaques">
-        <div class="container">
+        <div class="container wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">
             <h2>Informes e Notícias
             </h2>
             <hr>
@@ -373,7 +213,8 @@
         </div>
         </div>
     </section>
-    <section class="newsletter">
+    <br><br>
+    <section class="newsletter wow pulse" data-wow-duration="1.3s">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                 <h2 class="title-newsletter">
@@ -382,56 +223,239 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <form method="POST" class="form-inline cadastro-form" role="form">
-                
-                	<div class="form-group">
-                		<label class="sr-only" for="">Email</label>
-                		<input type="email" class="input-form-jlm" name="" id="" placeholder=" Insira seu e-mail">
-                	</div>
-                	<button type="reset" class="btn bt-jlm">Cadastrar</button>
+                    
+                    <div class="form-group">
+                        <label class="sr-only" for="">Email</label>
+                        <input type="email" class="input-form-jlm" name="" id="" placeholder=" Insira seu e-mail">
+                    </div>
+                    <button type="reset" class="btn bt-jlm">Cadastrar</button>
                 </form>
             </div>
         </div>
     </section>
+    <br><br>
+    <section class="cursos wow fadeInRightBig" data-wow-duration="1.5s">
+        <div class="container">
+            <div class="txt-destaque">
+                <h2>Cursos em destaque</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="nw-box">
+                        <img src="https://picsum.photos/g/440/320" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Título</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, libero a
+                                venenatis dignissim, enim arcu elementum metus, eget luctus.
+                            </p>
+                            <a href="#" class="read-more">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="nw-box">
+                        <img src="https://picsum.photos/g/440/320" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Título</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, libero a
+                                venenatis dignissim, enim arcu elementum metus, eget luctus.
+                            </p>
+                            <a href="#" class="read-more">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="nw-box">
+                        <img src="https://picsum.photos/g/440/320" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Título</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, libero a
+                                venenatis dignissim, enim arcu elementum metus, eget luctus.
+                            </p>
+                            <a href="#" class="read-more">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <br><br><br>
-    <section class="cursos">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class="box">
-                <header></header>
-                <main>
-                    <img src="https://picsum.photos/400/400" alt="">
-                </main>
+    <section class="downs-docs wow fadeInLeftBig" data-wow-duration="1.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="txt-destaque">
+                        <h2>Downloads</h2>
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="txt-destaque">
+                        <h2>Documentos</h2>
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td><a href="#" data-toggle="tooltip" title="Baixar"
+                                       class="btn btn-down ion-ios-download-outline"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="parceiros wow zoomIn" data-wow-duration="1.5s">
+        <div class="container">
+            <div class="txt-destaque">
+                <h2>Parceiros</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <img
+                            src="https://static.wixstatic.com/media/f113c0_7a8f17d15bc647e780d3f9c9c5391b98~mv2.jpg/v1/fill/w_89,h_89,al_c,q_80,usm_0.66_1.00_0.01/f113c0_7a8f17d15bc647e780d3f9c9c5391b98~mv2.webp"
+                            data-toggle="tooltip" title="Instituto John Miller" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <img
+                            src="https://static.wixstatic.com/media/f113c0_33994b857cbb48b6bcb71caf8f48bf0e~mv2.png/v1/fill/w_93,h_93,al_c,usm_0.66_1.00_0.01/f113c0_33994b857cbb48b6bcb71caf8f48bf0e~mv2.png"
+                            data-toggle="tooltip" title="Instituto Educacional Cognitivo" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <img
+                            src="https://static.wixstatic.com/media/f113c0_2803aa7fe7664850989a41cab416505d~mv2.jpg/v1/fill/w_111,h_83,al_c,q_80,usm_0.66_1.00_0.01/f113c0_2803aa7fe7664850989a41cab416505d~mv2.webp"
+                            data-toggle="tooltip" title="Campus Adventiste Du Saléve" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <img
+                            src="https://static.wixstatic.com/media/f113c0_c37531dde6cd42beaf22e95cf554d8ee~mv2.jpg/v1/fill/w_125,h_72,al_c,q_80,usm_0.66_1.00_0.01/f113c0_c37531dde6cd42beaf22e95cf554d8ee~mv2.webp"
+                            data-toggle="tooltip" title="Universidade Nove de Julho (Uninove)" alt="">
+                </div>
             </div>
         </div>
     </section>
 </main>
+<footer class="fim">
+    <div class="container"> php
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <br>
+                <ul class="menu-fim">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Blog JLM</a></li>
+                    <li><a href="#">Contate-nos</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" align="center">
+                <br>
+                <i class="ion-location" style="color: #6dfffb;"></i> Av. Posto Agropecuário Nº 900 - Setor Pampulha -
+                Formosa/GO<br>
+                <i class="ion-ios-telephone" style="color: #73d1ff;"></i> Tel: 61 3631-8823<br>
+                <i class="ion-iphone" style="color: #73d1ff;"></i> Cel: 61 9 9975-6850
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <br>
+                <ul class="redes-sociais-menu">
+                    <li><a href="" class="ion-social-facebook"></a></li>
+                    <li><a href="" class="ion-social-twitter"></a></li>
+                    <li><a href="" class="ion-social-instagram"></a></li>
+                    <li><a href="" class="ion-ios-world"></a></li>
+                    <li><a href="" class=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="totop">&uarr; Topo</div>
+
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="node_modules/bootsnav-master/js/bootsnav.js"></script>
 <script src="js/vendor/parlx.js"></script>
-
+<script src="js/vendor/totop.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
-    $('.parallax').Parlx({
-        height: '750px',
-        direction: "vertical",
-        speed: "-0.1"
-    });
-    window.ga = function () {
-        ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview');
 
-    $(document).ready(function () {
-        console.log('teste');
+    $("body").on('click', () => {
+      window.location = "http://www.google.com.br";
+  
     });
+  $('.parallax').Parlx({
+    height: '750px',
+    direction: "vertical",
+    speed: "-0.1"
+  });
+  $('[data-toggle="tooltip"]').tooltip();
+  $('.totop').tottTop({
+    duration: 2000,
+    scrollTop: 400
+  });
+  $(function() {
+    $('html').smoothScroll(500);
+  });
+  new WOW().init();
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>

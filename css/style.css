@@ -137,3 +137,79 @@ nav.navbar.bootsnav .navbar-toggle {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+.txt-destaque h2 {
+  margin-bottom: 20px;
+  color: #5d7587;
+  text-transform: uppercase;
+  font-size: 31px;
+}
+.txt-destaque hr {
+  width: 72px;
+  border-top: 3px solid #eee;
+  margin-top: -11px;
+  margin-bottom: 33px;
+}
+.btn-down {
+  font-size: 17px;
+  color: #ffffff;
+  background: #000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+.btn-down:hover {
+  color: white;
+}
+.parceiros {
+  padding: 15px;
+  background: #f9fdfd;
+}
+.fim {
+  padding: 10px;
+  background: #252525;
+  color: white;
+}
+.menu-fim li {
+  list-style: none;
+  font-size: 10pt;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu-fim li a {
+  color: #efefef;
+}
+.menu-fim li a:hover,
+.menu-fim li a:focus {
+  text-decoration: none;
+  color: #efefef;
+}
+.redes-sociais-menu {
+  padding-top: 5px;
+}
+.redes-sociais-menu li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 25px;
+}
+.redes-sociais-menu li a {
+  color: #efefef;
+  font-size: 2em;
+}
+.redes-sociais-menu li a:hover {
+  color: #0b95ff;
+  font-size: 2em;
+}
+.totop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  background: #a05b7e;
+  color: #fff;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 18px;
+}
